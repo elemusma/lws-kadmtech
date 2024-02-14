@@ -47,7 +47,7 @@ echo '<p style="margin:0px 0px 0px 15px;"><a href="tel:+1' . get_field('phone','
 echo '</div>';
 
 echo '<a href="https://latinowebstudio.com/" target="_blank" rel="noopener noreferrer" class="d-block position-md-absolute d-flex align-items-center" style="bottom:25px;padding-top:45px;text-decoration:none;">';
-echo '<p style="line-height:1;"><small style="color:#d7d7d7;">Website Design &amp; Development by<br>Latino Web Studio</small></p>';
+echo '<p style="line-height:1;"><small style="color:#d7d7d7;">Web Development by<br>Latino Web Studio</small></p>';
 echo '<img src="https://latinowebstudio.com/wp-content/uploads/2023/09/Logo-Icon-White.png" style="width:50px;height:50px;margin-left:15px;" class="" alt="">';
 // echo '<img src="https://insideoutcreative.io/wp-content/uploads/2022/06/created-by-inside-out-creative-black.png" style="width:150px;" class="h-auto ml-2" alt="">';
 echo '</a>';

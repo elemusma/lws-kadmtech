@@ -21,6 +21,10 @@
     display: inline-block;
     text-decoration: none;
     color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
 }
 
 .btn-main:hover {

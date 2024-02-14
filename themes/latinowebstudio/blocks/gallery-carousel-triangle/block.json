@@ -1,0 +1,18 @@
+{
+    "name": "acf/gallery-carousel-triangle",
+    "title": "Gallery Carousel Triangle",
+    "description": "A custom gallery-carousel-triangle block.",
+    "style": [
+        "file:./gallery-carousel-triangle.css"
+    ],
+    "category": "formatting",
+    "icon": "admin-customizer",
+    "keywords": [
+        "gallery-carousel-triangle"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "gallery-carousel-triangle.php"
+    },
+    "align": "full"
+}

@@ -1,0 +1,19 @@
+{
+    "name": "acf/text-columns",
+    "title": "Text Columns",
+    "description": "A custom text-columns block.",
+    "style": [
+        "file:./text-columns.css"
+    ],
+    "category": "formatting",
+    "icon": "admin-customizer",
+    "keywords": [
+        "text-columns",
+        "quote"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "text-columns.php"
+    },
+    "align": "full"
+}

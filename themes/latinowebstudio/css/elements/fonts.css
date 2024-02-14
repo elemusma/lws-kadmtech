@@ -25,7 +25,7 @@ a {
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 3px black;
+  text-shadow: var(--text-shadow);
 }
 
 .text-black {
@@ -98,8 +98,28 @@ blockquote {
   font-size: 90%;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: 4rem;
+}
+
+h1,
+.protest {
   font-family: 'protest_strikeregular';
+}
+
+h2,
+.h2 {
+  font-size: 2.5rem;
 }
 
 h2,

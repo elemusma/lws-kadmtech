@@ -1,6 +1,8 @@
 :root {
   --accent-primary: #F59B21;
   --accent-secondary: #17242D;
+  --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  --text-shadow: 1px 1px 3px black;
 }
 
 html {
@@ -76,7 +78,7 @@ a.border.accent:hover {
 }
 
 .box-shadow {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--box-shadow);
 }
 
 .overflow-h {
