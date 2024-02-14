@@ -1,0 +1,34 @@
+footer ul.menu>li>a {
+    border: none;
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+footer .gform_wrapper.gravity-theme .gfield_label,
+footer .gform-body label {
+    color: white;
+    margin-bottom: 0 !important;
+    line-height: 1;
+    margin-right: 11px;
+}
+
+footer .gform_wrapper.gravity-theme .gfield {
+    display: flex;
+    align-items: end;
+}
+
+footer .gform_footer.top_label {
+    display: inline-block !important;
+    /* border: 1px solid #252525; */
+    margin-top: 20px !important;
+    padding: 5px !important;
+    transition: all 0.25s ease-in-out;
+}
+
+footer input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    padding-top: 0 !important;
+    box-shadow: none !important;
+}

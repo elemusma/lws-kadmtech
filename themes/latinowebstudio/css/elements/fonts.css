@@ -58,20 +58,20 @@ a.text-black:hover {
 
 html,
 body {
-  font-family: "proxima_novaregular";
+  font-family: 'robotoregular';
 }
 
 .light {
-  font-family: "proxima_nova_altlight";
+  font-family: 'robotolight';
 }
 
 .thin {
-  font-family: "proxima_novathin";
+  font-family: 'robotothin';
 }
 
 .bold,
 strong {
-  font-family: "proxima_novabold";
+  font-family: 'robotobold';
 }
 
 .arrows li {
@@ -79,7 +79,7 @@ strong {
   list-style: none;
   color: #a4a3a3;
   font-style: italic;
-  font-family: "proxima_novabold";
+  font-family: 'robotobold';
 }
 
 .arrows li:before {
@@ -98,19 +98,14 @@ blockquote {
   font-size: 90%;
 }
 
-.cormorant-garamond {
-  font-family: cormorant-garamond, serif;
+h1 {
+  font-family: 'protest_strikeregular';
 }
 
-.cormorant-garamond.bold {
-  font-family: cormorant-garamond, serif;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'montserratthin';
 }
-
-/* 
-font-family: cormorant-garamond, serif; 
-font-weight:300;
-font-weight:400;
-font-weight:500;
-font-weight:600;
-font-weight:700;
-*/
