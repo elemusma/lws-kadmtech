@@ -4,15 +4,16 @@ add_action( 'init', 'register_acf_blocks' );
 
 function register_acf_blocks() {
     register_block_type( __DIR__ . '/blocks/content' );
-    register_block_type( __DIR__ . '/blocks/applications' );
-    register_block_type( __DIR__ . '/blocks/about' );
+    // register_block_type( __DIR__ . '/blocks/applications' );
+    // register_block_type( __DIR__ . '/blocks/about' );
     register_block_type( __DIR__ . '/blocks/gallery-carousel-triangle' );
     register_block_type( __DIR__ . '/blocks/content-and-image' );
     register_block_type( __DIR__ . '/blocks/text-columns' );
-    // register_block_type( __DIR__ . '/blocks/gallery' );
-    // register_block_type( __DIR__ . '/blocks/testimonials' );
+    register_block_type( __DIR__ . '/blocks/process' );
+    register_block_type( __DIR__ . '/blocks/testimonials' );
     register_block_type( __DIR__ . '/blocks/gallery-carousel' );
-    // register_block_type( __DIR__ . '/blocks/tabs' );
+    register_block_type( __DIR__ . '/blocks/icons' );
+    register_block_type( __DIR__ . '/blocks/slides' );
 }
 
 function kadmtech_stylesheets() {
@@ -203,7 +204,7 @@ function btn_shortcode( $atts, $content = null ) {
 	if (strpos($id, 'modal') !== false) {
 		return '<span class="btn-main ' . esc_attr($a['class']) . '" aria-label="' . esc_attr($a['aria-label']) . '" style="' . esc_attr($a['style']) . '" target="' . esc_attr($a['target']) . '" id="' . esc_attr($a['id']) . '">' . $content . '</span>';
 	} else {
-		return '<a class="btn-main ' . esc_attr($a['class']) . '" href="' . esc_attr($a['href']) . '" style="' . esc_attr($a['style']) . '" target="' . esc_attr($a['target']) . '" id="' . esc_attr($a['id']) . '">' . $content . '</a>';
+		return '<a class="btn-main ' . esc_attr($a['class']) . '" href="' . esc_attr($a['href']) . '" style="' . esc_attr($a['style']) . '" target="' . esc_attr($a['target']) . '" id="' . esc_attr($a['id']) . '"><div class="" style="">' . $content . '</div></a>';
 	}
 	
 	// [button href="#" class="btn-main" style=""]Learn More[/button]

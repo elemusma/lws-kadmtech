@@ -1,0 +1,19 @@
+{
+    "name": "acf/slides",
+    "title": "Slides",
+    "description": "A custom slides block.",
+    "style": [
+        "file:./slides.css"
+    ],
+    "category": "formatting",
+    "icon": "admin-customizer",
+    "keywords": [
+        "slides",
+        "quote"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "slides.php"
+    },
+    "align": "full"
+}

@@ -6,7 +6,7 @@ wp_enqueue_style('owl-carousel-css', get_theme_file_uri('/owl-carousel/owl.carou
 
 // start of header gallery
 
-echo '<section class="position-relative triangle-carousel-gallery" style="min-height:600px;">';
+echo '<section class="position-relative triangle-carousel-gallery" style="min-height:100vh;">';
 
 $backgroundCarousel = get_field('background_carousel');
 
@@ -84,7 +84,7 @@ endif;
 // echo '<div class="container w-100">';
 // echo '<div class="row">';
     
-echo '<div class="text-white position-relative triangle-carousel-gallery-content d-flex align-items-center justify-content-start" style="z-index:5;min-height:600px;">';
+echo '<div class="text-white position-relative triangle-carousel-gallery-content d-flex align-items-center justify-content-start" style="z-index:5;min-height:100vh;">';
 
 echo '<div class="container w-100">';
 echo '<div class="row">';

@@ -14,12 +14,12 @@ echo '<div class="container ' . get_field('container_classes') . '" style="' . g
 $image_side = get_field('image_side');
 
 if($image_side == 'Right') {
-    echo '<div class="row justify-content-center ' . get_field('row_classes') . '" style="' . get_field('row_style') . '">';
+    echo '<div class="' . get_field('row_classes') . '" style="' . get_field('row_style') . '">';
 } else {
-    echo '<div class="row flex-row-reverse justify-content-center ' . get_field('row_classes') . '" style="' . get_field('row_style') . '">';
+    echo '<div class="flex-row-reverse ' . get_field('row_classes') . '" style="' . get_field('row_style') . '">';
 }
 
-echo '<div class="col-lg-6 ' . get_field('column_classes') . '" style="' . get_field('column_style') . '">';
+echo '<div class="' . get_field('column_classes') . '" style="' . get_field('column_style') . '">';
     echo '<div data-aos="' . get_field('content_data_aos_animation') . '">';
         echo get_field('content');
     echo '</div>';
@@ -27,7 +27,7 @@ echo '</div>';
 
 $image_or_gallery = get_field('image_or_gallery');
 
-echo '<div class="col-lg-6">';
+echo '<div class="' . get_field('image_column_class') . '" style="' . get_field('image_column_style') . '">';
 echo '<div data-aos="' . get_field('image_data_aos_animation') . '" data-aos-delay="300">';
 
 if($image_or_gallery == 'Image') {

@@ -6,8 +6,8 @@ echo get_template_part('partials/bg-img');
 
 echo get_field('code_block');
 
-echo '<div class="container-fluid">';
-echo '<div class="row ' . get_field('row_classes') . '" style="' . get_field('row_style') . '">';
+echo '<div class="' . get_field('container_classes') . '" style="' . get_field('container_style') . '">';
+echo '<div class="' . get_field('row_classes') . '" style="' . get_field('row_style') . '">';
 
 if(have_rows('text_columns')):
 $textColumns=0;
@@ -19,12 +19,12 @@ echo '<span class="position-absolute h1 mb-0 text-columns-big-title cormorant-ga
 opacity: .29;
 top: -50%;
 left: 50%;
-transform: translate(-55%,40%);
+transform: translate(-55%,50%);
 font-size: 100px;
 color:var(--accent-primary);
 ">' . get_sub_field('big_title') . '</span>';
 echo '<h3 class="" style="letter-spacing:0.5em;color:white;
-position: relative;">' . get_sub_field('small_title') . '</h3>';
+position:relative;font-size:1rem;">' . get_sub_field('small_title') . '</h3>';
 // echo '</div>';
 // echo '<div class="overflow-h" style="height: 250px;">';
 

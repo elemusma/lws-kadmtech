@@ -23,14 +23,19 @@ if($carouselOptions == 'Relationship') {
     // echo 'relatioinship';
 $relationshipCarousel = get_field('relationship_carousel');
 if( $relationshipCarousel ): 
+    $relationshipCarouselCounter = 0;
     echo '<div class="gallery-carousel owl-carousel owl-theme arrows-middle">';
 foreach( $relationshipCarousel as $post ):
     $permalink = get_permalink( $post->ID );
     $title = get_the_title( $post->ID );
     // $custom_field = get_field( 'field_name', $post->ID );
     $featured_image_id = get_post_thumbnail_id($post->ID);
+    $relationshipCarouselCounter++;
+    if($relationshipCarouselCounter > 3) {
+        $relationshipCarouselCounter = 0;
+    }
 
-echo '<div class="position-relative img-hover overflow-h">';
+echo '<div class="position-relative img-hover overflow-h" data-aos="fade-up" data-aos-delay="' . $relationshipCarouselCounter . '00">';
 echo '<a href="' . $permalink . '" style="" class="d-block">';
 
 echo wp_get_attachment_image($featured_image_id, 'full','',[
@@ -47,10 +52,17 @@ endif;
     // echo 'gallery';
 $gallery = get_field('gallery_carousel');
 if( $gallery ): 
+    $galleryCarouselCounter = 0;
     echo '<div class="gallery-carousel owl-carousel owl-theme arrows-middle">';
 foreach( $gallery as $image ):
-echo '<div class="position-relative img-hover overflow-h">';
-echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set" style="" class="d-block">';
+    $galleryCarouselCounter++;
+    if($galleryCarouselCounter > 3) {
+        $galleryCarouselCounter = 0;
+    }
+echo '<div class="position-relative img-hover overflow-h" data-aos="fade-up" data-aos-delay="' . $galleryCarouselCounter . '00">';
+echo '<a href="' . get_permalink(63) . '" style="" class="d-block">';
+// echo '<a href="' . wp_get_attachment_image_url($image['id'], 'full') . '" data-lightbox="image-set-gallery-carousel" style="" class="d-block">';
+// echo '</a>';
 
 echo wp_get_attachment_image($image['id'], 'full','',[
     'class'=>'w-100 d-block',
@@ -58,10 +70,18 @@ echo wp_get_attachment_image($image['id'], 'full','',[
 ] );
 echo '</a>';
 echo '</div>';
-endforeach; 
+endforeach;
 echo '</div>';
 endif;
 }
+
+echo '<div class="row justify-content-center">';
+echo '<div class="col-lg-6 text-center" data-aos="fade-up">';
+
+    echo get_field('content_bottom');
+
+echo '</div>';
+echo '</div>';
 
 
 echo '</div>';

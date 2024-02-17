@@ -1,6 +1,20 @@
 :root {
   --accent-primary: #F59B21;
   --accent-secondary: #17242D;
+  --accent-tertiary: #D6810A;
+  /* Adjusted to be in the same warm color family */
+  --accent-quaternary: #3B362F;
+  /* Adjusted to be a darker shade */
+  --accent-quinary: #2E2720;
+  /* Adjusted to be a darker shade */
+  --accent-senary: #1F1F1F;
+  /* Adjusted to be a neutral shade */
+  --accent-septenary: #464646;
+  /* Adjusted to be a darker shade */
+  --accent-octonary: #4C4A3D;
+  /* Adjusted to be a darker shade */
+  --accent-nonary: #343434;
+  /* Adjusted to be a neutral shade */
   --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   --text-shadow: 1px 1px 3px black;
 }
@@ -37,6 +51,34 @@ a.bg-accent:hover {
 
 .bg-accent-secondary {
   background: var(--accent-secondary);
+}
+
+.bg-accent-tertiary {
+  background: var(--accent-tertiary);
+}
+
+.bg-accent-quaternary {
+  background: var(--accent-quaternary);
+}
+
+.bg-accent-quinary {
+  background: var(--accent-quinary);
+}
+
+.bg-accent-senary {
+  background: var(--accent-senary);
+}
+
+.bg-accent-septenary {
+  background: var(--accent-septenary);
+}
+
+.bg-accent-octonary {
+  background: var(--accent-octonary);
+}
+
+.bg-accent-nonary {
+  background: var(--accent-nonary);
 }
 
 a.bg-accent-secondary:hover {
@@ -114,11 +156,17 @@ hr.text-white {
 }
 
 .overlay {
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.35);
+}
+
+.overlay.gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%);
 }
 
 .divider {

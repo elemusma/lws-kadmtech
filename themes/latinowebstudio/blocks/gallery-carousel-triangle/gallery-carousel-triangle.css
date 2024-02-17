@@ -53,12 +53,12 @@
     }
 }
 
-@media only screen and (max-width:767px) {
+/* @media only screen and (max-width:767px) {
 
     .triangle-carousel-gallery,
     .triangle-carousel-gallery-content {
         min-height: 400px !important;
     }
-}
+} */
 
 /* end of header gallery */

@@ -5,9 +5,9 @@ echo get_template_part('partials/bg-img');
 
 echo get_field('code_block');
 
-echo '<div class="container">';
+echo '<div class="' . get_field('container_classes') . '" style="' . get_field('container_style') . '">';
 
-echo '<div class="row justify-content-center">';
+echo '<div class="' . get_field('row_classes') . '" style="' . get_field('row_style') . '">';
 
     echo get_template_part('partials/content-block');
 

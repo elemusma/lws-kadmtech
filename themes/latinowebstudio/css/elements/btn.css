@@ -27,6 +27,33 @@
     text-transform: uppercase;
 }
 
+.btn-main.outline {
+    background: transparent;
+    padding: 2px;
+    transition: all .25s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 0px;
+    border: 1px solid black;
+    box-shadow: none !important;
+}
+
+.btn-main.outline * {
+    border: 1px solid black;
+    background: white;
+    color: black;
+    text-shadow: none !important;
+    padding: 5px 35px;
+    transition: all .25s ease-in-out;
+}
+
+.btn-main.outline:hover * {
+    background: var(--accent-secondary);
+    color: white;
+    border-color: var(--accent-secondary);
+}
+
 .btn-main:hover {
     background: var(--accent-secondary);
     text-decoration: none;

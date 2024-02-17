@@ -1,3 +1,17 @@
-/* body {
-    background: red;
-} */
+/* start of testimonials */
+.testimonial-carousel.owl-carousel .owl-stage {
+    display: flex;
+}
+
+@media only screen and (min-width: 1260px) {
+
+    .testimonial-carousel.arrows-middle button.owl-prev {
+        left: -3%;
+    }
+
+    .testimonial-carousel.arrows-middle button.owl-next {
+        right: -3%;
+    }
+}
+
+/* end of testimonials */

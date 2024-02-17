@@ -1,0 +1,40 @@
+/* start of process */
+.hover-box {
+    opacity: 0;
+}
+
+.col-services-hover:hover .hover-box {
+    opacity: 1;
+}
+
+/* .col-services-hover-content li {
+    position: relative;
+    list-style: none;
+    color: #2a3136;
+    font-style: italic;
+    font-family: "proxima_novabold";
+}
+
+.col-services-hover-content li:before {
+    content: "";
+    background: url('https://buildupuniversity.com/wp-content/uploads/2024/02/Arrow-Right-White.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    left: -30px;
+} */
+
+@media only screen and (max-width:992px) {
+    .col-services:nth-child(2) {
+        padding-bottom: 75px;
+    }
+
+    .col-services:nth-child(4) {
+        padding-top: 75px;
+    }
+}
+
+/* end of process */

@@ -22,6 +22,14 @@ ul.menu>li.menu-item-has-children {
     transform: translate(9px, -50%);
 }
 
+#navItems .gform_footer.top_label {
+    margin-bottom: 0 !important;
+}
+
+#navItems .gform_footer.top_label input#gform_submit_button_2 {
+    margin-left: 0;
+}
+
 @media screen and (max-width:1199px) {
     .dropdown-arrow {
         top: 12px;
@@ -41,7 +49,7 @@ ul.menu>li>a {
     font-family: unset; */
 }
 
-.current-menu-item>a,
+ul.menu>li.current-menu-item>a,
 .current_page_parent>a,
 #menu-main-menu>.current_page_item>a,
 .current_page_parent>.current-menu-item>a,
