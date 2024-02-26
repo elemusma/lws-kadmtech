@@ -12,12 +12,22 @@ $backgroundCarousel = get_field('background_carousel');
 
 if( $backgroundCarousel ):
     echo '<div class="position-absolute w-100 h-100 big-gallery owl-carousel owl-theme overflow-h" style="top:0;left:0;">';
+    $galleryCounter=0;
     foreach( $backgroundCarousel as $image ):
         echo '<div class="h-100">';
-        echo wp_get_attachment_image($image['id'], 'full','',[
-            'class'=>'w-100 h-100 big-gallery-img skip-lazy',
-            'style'=>'object-fit:cover;'
-        ] );
+        $galleryCounter++;
+        // if($galleryCounter == 1) {
+        //     echo wp_get_attachment_image($image['id'], 'full','',[
+        //         'class'=>'w-100 h-100 big-gallery-img skip-lazy',
+        //         'style'=>'object-fit:cover;'
+        //         ] );
+        //     } else {
+                echo wp_get_attachment_image($image['id'], 'full','',[
+                    'class'=>'w-100 h-100 big-gallery-img',
+                    'style'=>'object-fit:cover;'
+                    ] );
+            // }
+
         echo '</div>';
     endforeach; 
     echo '</div>';
@@ -26,37 +36,11 @@ endif;
 
 echo '<div class="position-absolute bg-black w-100 h-100" style="opacity:.5;z-index:3;"></div>';
 
-// echo '<div class="position-absolute w-100" style="background:#111314;height:75px;bottom:0;left:0;z-index:4;border-top:3px solid #758189;"></div>';
-
-// if(have_rows('triangle_carousel')): while(have_rows('triangle_carousel')): the_row();
-
-
-
-// $smallGallery = get_field('triangle_carousel');
-// $smallGalleryCounter = 0;
-
-// if( $smallGallery ): 
-//     echo '<div class="triangle-carousel owl-carousel owl-theme overflow-h" style="top:0;right:0;background-repeat:no-repeat;background-size:contain;">';
-//     foreach( $smallGallery as $image ):
-//         $smallGalleryCounter++;
-//         echo '<div>';
-//         echo wp_get_attachment_image($image['id'], 'full','',[
-//             'class'=>'w-100 h-100 small-gallery-img number-' . $smallGalleryCounter . ' skip-lazy',
-//             'style'=>'object-fit:cover;'
-//         ] );
-//         echo '</div>';
-//     endforeach; 
-//     echo '</div>';
-// endif;
-
-
-
-
 $smallGallery = get_field('triangle_carousel');
-$smallGalleryCounter = 0;
 
 if( $smallGallery ): 
     echo '<div class="position-absolute h-100 small-gallery owl-carousel owl-theme overflow-h d-flex justify-content-end" style="top:0;right:0;z-index:4;background-repeat:no-repeat;background-size:contain;">';
+    $smallGalleryCounter = 0;
     foreach( $smallGallery as $image ):
         $smallGalleryCounter++;
         echo '<div class="h-100 position-relative small-triangle-width" style="width:35%;">';
@@ -71,10 +55,20 @@ if( $smallGallery ):
         -ms-clip-path: polygon(77% 0%, 100% 0, 100% 100%, 2% 100%);
         -webkit-clip-path: polygon(77% 0%, 100% 0, 100% 100%, 2% 100%);
         -moz-clip-path: polygon(77% 0%, 100% 0, 100% 100%, 2% 100%);">';
-        echo wp_get_attachment_image($image['id'], 'full','',[
-            'class'=>'w-100 h-100 small-gallery-img number-' . $smallGalleryCounter . ' skip-lazy',
-            'style'=>'object-fit:cover;'
-        ] );
+
+        // if($smallGalleryCounter == 1) {
+        //     echo wp_get_attachment_image($image['id'], 'full','',[
+        //         'class'=>'w-100 h-100 small-gallery-img number-' . $smallGalleryCounter . ' skip-lazy',
+        //         'style'=>'object-fit:cover;'
+        //         ] );
+        // } else {
+            echo wp_get_attachment_image($image['id'], 'full','',[
+                'class'=>'w-100 h-100 small-gallery-img number-' . $smallGalleryCounter,
+                'style'=>'object-fit:cover;'
+                ] );
+        // }
+
+
         echo '</div>';
         echo '</div>';
     endforeach; 

@@ -24,12 +24,12 @@ echo '<div class="position-relative w-100">';
 
 echo '<div class="w-100 h-100 position-absolute slides-show-on-active" style="top:0;left:0;background:rgba(0,0,0,.5);opacity:0;"></div>';
 
-echo '<div class="container w-100">';
+echo '<div class="container">';
 
 
 echo '<div class="row justify-content-center ' . get_sub_field('row_classes') . '" style="' . get_sub_field('row_style') . '">';
 
-echo '<div class="col-lg-9 text-center text-shadow ' . get_sub_field('column_classes') . '" style="padding-bottom: 25px;' . get_sub_field('column_style') . '">';
+echo '<div class="col-lg-9 text-center text-shadow ' . get_sub_field('column_classes') . '" style="padding-top:25px;padding-bottom: 25px;' . get_sub_field('column_style') . '">';
 
 echo '<div class="slides-show-on-active bg-accent w-100 position-absolute" style="height:15px;left:0;top:-30px;opacity:0;"></div>';
 
@@ -56,8 +56,8 @@ endwhile; endif;
 
 // start of labels
 if(have_rows('sections')):
-echo '<div class="position-fixed side-navbar d-lg-block d-none" style="top:0%;right:25px;transform:translate(0, 20%);z-index:2;">';
-echo '<ul class="list-unstyled text-right" style="max-width:300px;">';
+echo '<div class="position-fixed side-navbar d-lg-block d-none" style="top:0%;right:25px;transform:translate(0, 40%);z-index:2;">';
+echo '<ul class="list-unstyled text-right" style="max-width:200px;">';
 $sectionsCounter = 0;
 while(have_rows('sections')): the_row();
 $sectionsCounter++;

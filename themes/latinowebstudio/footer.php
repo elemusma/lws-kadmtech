@@ -13,7 +13,7 @@ echo '<div class="container">';
 
 echo '<div class="row justify-content-center">';
 
-echo '<div class="col-lg-4 col-md-12 col-12 text-white">';
+echo '<div class="col-lg-4 col-md-12 col-12 text-white" style="padding-bottom:25px;">';
 
 echo '<div class="h-100 d-flex">';
 echo '<div>';
